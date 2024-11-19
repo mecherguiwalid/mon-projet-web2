@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Refresh" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaires</title>
+</head>
+<body>
+    <form method="post" enctype="application/x-www-form-urlencoded">
+        <label for="name">nom:</label>
+        <input type="text" name="name" id="name"placeholder="taper votre nom" required>
+        <br>
+        <input type="password" name="motdepasse" id="motdepasse" required>
+    <br>
+      <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+      <br>
+      <input type="checkbox" id="accepterConditions" name="accepterConditions" value="accepte">
+     
+<label for="accepterConditions">J'accepte les conditions</label>
+
+<input type="radio" id="genreHomme" name="genre" value="homme">
+<label for="genreHomme">Homme</label><input type="radio" id="genreFemme" name="genre" value="femme">
+<label for="genreFemme">Femme</label>
+
+<input type="radio" id="SituationC" name="Situation" value="homme">
+        <label for="SituationC">Celibataire</label>      
+        <input type="radio" id="SituationM" name="Situation" value="femme">
+        <label for="SituationM">Narié</label>
+        <input type="file" id="choisirFichier" name="fichier" accept=".jpg, .jpeg, .png, .pdf">
+        <br>
+        <input type="date" id="dateNaissance" name="dateNaissance" value="2024-11-19" required>
+        <input type="range" id="niveauVolume" name="volume" min="0" max="100" value="10">
+        <input type="number" id="quantite" name="quantite" min="1" max="10" step="1" value="1">
+<input type="color" id="couleur" name="couleur" value="#FF0000">
+<input type="hidden" id="identifiantCache" name="identifiantCache" value="12345">
+<input type="tel" id="numeroTelephone" name="numeroTelephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+<input type="url" id="siteWeb" name="siteWeb" placeholder="http://www.example.com" required>
+<input type="time" id="heureRdv" name="heureRdv" min="09:00" max="18:00" step="900" required>
+<input type="month" id="moisAnnee" name="moisAnnee" min="2024-01" max="2024-12" required>
+
+        <input type="submit" value="Enregistrer">
+<input type="reset" value="Réinitialiser">
+</form>    
+</body>
+</html>
